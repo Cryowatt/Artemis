@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  artemis.querynode.application:
+    image: ${DOCKER_REGISTRY-}artemisquerynodeapplication
+    build:
+      context: .
+      dockerfile: Artemis.QueryNode.Application/Dockerfile
